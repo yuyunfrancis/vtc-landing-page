@@ -199,6 +199,24 @@ header label{
     font-size: 8rem;
     color: #f9f9f9;
 }
+
+ul {
+  line-height: 1.5em;
+  margin: 5px 0 15px;
+  /* padding: 0; */
+  padding: 0 4rem;
+
+}
+
+li {
+  list-style: disc;
+  position: relative;
+  padding: 8px 0 0 20px;
+  text-align: left;
+  font-size: 1.3rem;
+  color:#666;
+    line-height: 2.5rem;
+}
 .features .box-container{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -683,8 +701,8 @@ header label{
     }
 
         .features .box-container{
-         display: block;
-         width:100%;
+        grid-template-columns: 1fr;
+        width: 100%;
     }
 
 }
