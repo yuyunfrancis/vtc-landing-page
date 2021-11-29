@@ -96,19 +96,16 @@ header{
     justify-content: space-between;
     z-index: 1000;
 }
+/* header .logo{
+    width:80%;
 
-header .logo{
-    font-size: 2rem;
-    color:var(--purple);
+} */
+header .navbar{
+padding-top: 2rem;
 }
-
-header .logo span{
-    color:var(--pink);
-}
-
 header .navbar a{
     font-size: 1.7rem;
-    margin-left: 2rem;
+    margin-left: 1rem;
     color:var(--purple);
 }
 
@@ -127,7 +124,6 @@ header label{
     visibility: hidden;
     opacity: 0;
 }
-
 .home{
      min-height: 50vh;
     padding:0 9%;
@@ -160,14 +156,13 @@ header label{
     font-size: 5.5rem;
    color:#fff;
     text-transform: uppercase;
-    font-weight: bold;
-     text-shadow: 2px 2px#0066cc; 
+    font-weight: bold; 
 }
 
 .home .content h3 span{
     color:var(--pink);
     text-transform: uppercase;
-    text-shadow: 2px 2px  #0066cc; 
+    font-weight: bold;
 }
 
 .home .content p{
@@ -547,6 +542,7 @@ li {
 .footer .box-container{
     display: flex;
     flex-wrap: wrap;
+    padding:0 4rem;
 }
 
 .footer .box-container .box{
@@ -563,15 +559,15 @@ li {
 }
 
 .footer .box-container .box p{
-    font-size: 1.5rem;
-    padding:.5rem 0;
+    font-size: 1.2rem;
+    padding:0.5rem 0;
     color:#eee;
 }
 
 .footer .box-container .box a{
     display: block;
     font-size: 1.5rem;
-    padding:.5rem 0;
+    padding:0.5rem 0;
     color:#eee;
 }
 
@@ -585,15 +581,15 @@ li {
 }
 
 .footer .box-container .box .info i{
-    margin:.5rem 0;
-    margin-right: 1rem;
+    margin:0.5rem 0;
+    margin-right: 2rem;
     border-radius: 50%;
     background:#fff;
     color:var(--pink);
     font-size: 1.5rem;
     height:4.5rem;
     width:4.5rem;
-    line-height: 4.5rem;
+    line-height: 5rem;
     text-align: center;
 }
 
