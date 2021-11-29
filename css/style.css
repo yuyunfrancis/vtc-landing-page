@@ -106,11 +106,89 @@ padding-top: 2rem;
 header .navbar a{
     font-size: 1.7rem;
     margin-left: 1rem;
+    text-transform: uppercase;
     color:var(--purple);
 }
 
 header .navbar a:hover{
     color:var(--pink);
+    text-decoration: none;
+}
+
+
+.lang-menu {
+    width: 100px;
+    text-align: right;
+    font-weight: bold;
+    margin-top: 10px;
+    position: relative;
+}
+.lang-menu .selected-lang {
+    display: flex;   
+    justify-content: space-between;
+    line-height: 2;
+    cursor: pointer;
+    color: #0066cc;
+}
+.lang-menu .selected-lang:before {
+    content: '';
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+}
+
+.lang-menu ul {
+    margin: 0;
+    padding: 0;
+    display: none;
+    background-color: #fff;
+    border: 1px solid #f8f8f8;
+    position: absolute;
+    top: 45px;
+    right: 0px;
+    width: 125px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+}
+
+
+.lang-menu ul li {
+    list-style: none;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lang-menu ul li a {
+    text-decoration: none;
+    width: 125px;
+    display: block;
+}
+
+.lang-menu ul li:hover {
+    background-color: #f2f2f2;
+}
+
+.lang-menu ul li a:before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.en:before {
+    background-image: url(https://www.countryflags.io/us/flat/32.png);
+}
+.fr:before {
+    background-image: url(https://www.countryflags.io/fr/flat/32.png);
+}
+
+
+.lang-menu:hover ul {
+    display: block;
 }
 
 header input{
@@ -130,8 +208,8 @@ header label{
     padding-top: 7.5rem;
     /* padding-bottom: 2rem; */
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: left;
+    justify-content: left;
     background:url(../images/header-background.jpg) no-repeat;
     background-size: cover;
     background-position: center;
@@ -150,7 +228,9 @@ header label{
         transform: translateY(-3.5rem);
     }
 }
-
+.home .content {
+    text-align: left;
+}
 .home .content h3{
     margin-top: 6rem;
     font-size: 5.5rem;
@@ -162,7 +242,7 @@ header label{
 .home .content h3 span{
     color:var(--pink);
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 500px;
 }
 
 .home .content p{
@@ -170,6 +250,7 @@ header label{
     font-size: 1.7rem;
      color:#fff;
     padding:1rem 0;
+    text-align: justify;
 }
 
 .countdown {
@@ -182,17 +263,17 @@ header label{
 .time{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: left;
+    justify-content: left;
     margin: 15px;
-    font-size: 2rem;
-    color: #f9f9f9;
+    font-size: 1.5rem;
+    color: var(--pink);
 }
 
 .time h2{
     font-weight: bold;
     font-size: 8rem;
-    color: #f9f9f9;
+    color: var(--pink);
 }
 
 ul {
@@ -296,7 +377,7 @@ li {
 .newsletter{
     text-align: center;
     padding:5rem 1rem;
-    background:url(../images/banner.jpg) no-repeat;
+    background: var(--purple);
     background-size: cover;
     background-position: center;
 }
@@ -366,9 +447,9 @@ li {
     text-align: center;
     position: relative;
     border:.1rem solid rgba(0,0,0,.2);
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.1);
     flex:1 1 30rem;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
 }
 
 .review .box-container .box .fa-quote-right{
@@ -477,7 +558,7 @@ li {
 
 .contact .image img{
     width:100%;
-    padding:2rem;
+    padding:4rem;
 }
 
 .contact form{
@@ -534,7 +615,7 @@ li {
 
 .footer{
     padding-top: 3rem;
-    background:url(../images/banner.jpg) no-repeat;
+    background: var(--gradient);
     background-size: cover;
     background-position: center;
 }
@@ -591,6 +672,18 @@ li {
     width:4.5rem;
     line-height: 5rem;
     text-align: center;
+}
+
+.footer .box-container .box .social i{
+    /* margin:0.5rem 0; */
+    
+    border-radius: 25%;
+    color:#f9f9f9;
+    font-size: 2rem;
+    height:4.5rem;
+    width:4.5rem;
+    line-height: 2rem;
+    text-align: left;
 }
 
 .footer .credit{
