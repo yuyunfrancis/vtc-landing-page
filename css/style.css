@@ -117,10 +117,10 @@ header .navbar a:hover{
 
 
 .lang-menu {
-    width: 100px;
+    /* width: 100px; */
     text-align: right;
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: px;
     position: relative;
 }
 .lang-menu .selected-lang {
@@ -179,12 +179,12 @@ header .navbar a:hover{
     background-size: contain;
     background-repeat: no-repeat;
 }
-.en:before {
+/* .en:before {
     background-image: url(https://www.countryflags.io/us/flat/32.png);
 }
 .fr:before {
     background-image: url(https://www.countryflags.io/fr/flat/32.png);
-}
+} */
 
 
 .lang-menu:hover ul {
@@ -236,7 +236,7 @@ header label{
     font-size: 5.5rem;
    color:#fff;
     text-transform: uppercase;
-    font-weight: bold; 
+    font-weight: 500px;
 }
 
 .home .content h3 span{
@@ -246,7 +246,7 @@ header label{
 }
 
 .home .content p{
-     font-weight: bold;
+     /* font-weight: bold; */
     font-size: 1.7rem;
      color:#fff;
     padding:1rem 0;
@@ -550,6 +550,7 @@ li {
     justify-content: center;
     flex-wrap: wrap;
     padding-bottom: 4rem;
+    padding-top: 7rem;
 }
 
 .contact .image{
@@ -558,7 +559,9 @@ li {
 
 .contact .image img{
     width:100%;
-    padding:4rem;
+    padding-right: 4rem;
+    padding-left: 4rem;
+    /* padding-bottom: 2rem; */
 }
 
 .contact form{
@@ -662,16 +665,13 @@ li {
 }
 
 .footer .box-container .box .info i{
-    margin:0.5rem 0;
-    margin-right: 2rem;
-    border-radius: 50%;
-    background:#fff;
-    color:var(--pink);
-    font-size: 1.5rem;
+    border-radius: 25%;
+    color:#f9f9f9;
+    font-size: 2rem;
     height:4.5rem;
     width:4.5rem;
-    line-height: 5rem;
-    text-align: center;
+    line-height: 2rem;
+    text-align: left;
 }
 
 .footer .box-container .box .social i{
