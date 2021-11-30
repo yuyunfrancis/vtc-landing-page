@@ -321,6 +321,10 @@ li {
   z-index: 1;
 }
 
+.fullclick p {
+padding-left: 30%;
+}
+
 .fullclick li a.main::after {
   position: absolute;
   top: 0;
@@ -713,8 +717,15 @@ li {
     justify-content:center;
     width: 100%;
     align-items:center;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.fullclick p {
+padding-left: 10%;
+padding-left: 10%;
+align-items: center;
+text-align: center;
 }
 
 }
