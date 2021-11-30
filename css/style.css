@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
 
 :root{
-    --purple: #0066cc; 
-    --pink:#3399cc ;
-    --gradient:linear-gradient(90deg, var(--purple), var(--pink));
+    --blue: #0066cc; 
+    --lightBlue:#3399cc ;
+    --gradient:linear-gradient(90deg, var(--blue), var(--lightBlue));
 }
 
 *{
@@ -16,7 +16,7 @@
 }
 
 *::selection{
-    background:var(--pink);
+    background:var(--blue);
     color:#fff;
 }
 
@@ -106,90 +106,16 @@ padding-top: 2rem;
 header .navbar a{
     font-size: 1.7rem;
     margin-left: 1rem;
-    text-transform: uppercase;
-    color:var(--purple);
+    /* text-transform: uppercase; */
+    color:var(--blue);
 }
 
 header .navbar a:hover{
-    color:var(--pink);
+    color:var(--lightBlue);
     text-decoration: none;
 }
 
 
-.lang-menu {
-    /* width: 100px; */
-    text-align: right;
-    font-weight: bold;
-    margin-top: px;
-    position: relative;
-}
-.lang-menu .selected-lang {
-    display: flex;   
-    justify-content: space-between;
-    line-height: 2;
-    cursor: pointer;
-    color: #0066cc;
-}
-.lang-menu .selected-lang:before {
-    content: '';
-    display: inline-block;
-    width: 32px;
-    height: 32px;
-}
-
-.lang-menu ul {
-    margin: 0;
-    padding: 0;
-    display: none;
-    background-color: #fff;
-    border: 1px solid #f8f8f8;
-    position: absolute;
-    top: 45px;
-    right: 0px;
-    width: 125px;
-    border-radius: 5px;
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
-}
-
-
-.lang-menu ul li {
-    list-style: none;
-    text-align: left;
-    display: flex;
-    justify-content: space-between;
-}
-
-.lang-menu ul li a {
-    text-decoration: none;
-    width: 125px;
-    display: block;
-}
-
-.lang-menu ul li:hover {
-    background-color: #f2f2f2;
-}
-
-.lang-menu ul li a:before {
-    content: '';
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    vertical-align: middle;
-    margin-right: 10px;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-/* .en:before {
-    background-image: url(https://www.countryflags.io/us/flat/32.png);
-}
-.fr:before {
-    background-image: url(https://www.countryflags.io/fr/flat/32.png);
-} */
-
-
-.lang-menu:hover ul {
-    display: block;
-}
 
 header input{
     display: none;
@@ -197,7 +123,7 @@ header input{
 
 header label{
     font-size: 3rem;
-    color:var(--purple);
+    color:var(--blue);
     cursor: pointer;
     visibility: hidden;
     opacity: 0;
@@ -320,7 +246,7 @@ li {
 
 .features .box-container .box h3{
     font-size: 2rem;
-    color:var(--purple);
+    color:var(--blue);
     padding-top: 1rem;
 }
 
@@ -374,10 +300,42 @@ li {
     margin-left: 2rem;
 }
 
+
+.fullclick{
+    justify-content:center;
+    width: 100%;
+    align-items:center;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+.fullclick li {
+  list-style: none;
+  margin: 1em 0;
+  padding: 20px 10px;
+  background: var(--lightBlue);
+  position: relative;
+  justify-content:center;
+}
+.fullclick a {
+  color: #fff;
+  z-index: 1;
+}
+
+.fullclick li a.main::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: ' ';
+}
+
+
+
 .newsletter{
     text-align: center;
     padding:5rem 1rem;
-    background: var(--purple);
+    background: var(--blue);
     background-size: cover;
     background-position: center;
 }
