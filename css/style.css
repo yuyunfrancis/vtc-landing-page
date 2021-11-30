@@ -170,9 +170,10 @@ header label{
 .home .content p{
      /* font-weight: bold; */
     font-size: 1.7rem;
-     color:var();
+     color:var(--blue);
     padding:1rem 0;
     text-align: justify;
+    font-weight: bold;
 }
 
 .countdown {
@@ -418,7 +419,7 @@ li {
 }
 
 .newsletter form input[type="submit"]:hover{
-    color:var(--pink);
+    color:var(--lightBlue);
 }
 
 .review .box-container{
@@ -444,7 +445,7 @@ li {
     position: absolute;
     top:1rem; right:2rem;
     font-size: 8rem;
-    color:var(--pink);
+    color:var(--lightBlue);
     opacity: .3;
 }
 
@@ -457,12 +458,12 @@ li {
 }
 
 .review .box-container .box .user h3{
-    color:var(--pink);
+    color:var(--lightBlue);
     font-size: 2rem;
 }
 
 .review .box-container .box .user .stars i{
-    color:var(--purple);
+    color:var(--blue);
     font-size: 1.5rem;
     padding:1rem 0;
 }
@@ -542,7 +543,7 @@ li {
 .contact form .inputBox textarea:valid ~ label{
     top:-0.5rem;
     font-size: 1.5rem;
-    color:var(--pink);
+    color:var(--lightBlue);
 }
 
 .footer{
@@ -575,6 +576,7 @@ li {
     font-size: 1.2rem;
     padding:0.5rem 0;
     color:#eee;
+
 }
 
 .footer .box-container .box a{
@@ -620,7 +622,7 @@ li {
     font-weight: normal;
     letter-spacing: .1rem;
     color:#fff;
-    border-top: .1rem solid #fff5;
+    border-top: 0.1rem solid #fff5;
     padding:2.5rem 1rem;
     text-align: center;
 }
